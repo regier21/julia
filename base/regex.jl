@@ -158,12 +158,12 @@ The `offsets` field stores the locations of the start of each capture group,
 with 0 denoting a group that was not captured.
 
 This type can be used as an iterator over the capture groups of the `Regex`,
-yielding the substrings captured in each group. 
+yielding the substrings captured in each group.
 Because of this, the captures of a match can be destructured.
 If a group was not captured, `nothing` will be yielded instead of a substring.
 
 Methods that accept a `RegexMatch` object are defined for [`iterate`](@ref),
-[`length`](@ref), [`eltype`](@ref), [`keys`](@ref keys(::RegexMatch)), [`haskey`](@ref), and 
+[`length`](@ref), [`eltype`](@ref), [`keys`](@ref keys(::RegexMatch)), [`haskey`](@ref), and
 [`getindex`](@ref), where keys are the the names or numbers of a capture group.
 See [`keys`](@ref keys(::RegexMatch)) for more information.
 
